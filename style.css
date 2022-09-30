@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
+:root {
+    --spacing: 20px;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -52,11 +56,11 @@ body {
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 2px;
-    margin-bottom: 20px;
+    margin-bottom: var(--spacing);
 }
 
 .text .slogan {
-    font-size: 20px;
+    font-size: var(--spacing);
     color: #fff;
     text-align: center;
     font-weight: 400;
@@ -69,33 +73,29 @@ body {
     text-align: center;
     font-weight: 400;
     letter-spacing: 2px;
-    margin-bottom: 20px;
+    margin-bottom: var(--spacing);
 }
 
 .card {
-    /* width: 1vw; */
     text-align: left;
-    /* background-color: #3c4852; */
-    padding: 20px;
+    padding: var(--spacing);
     font-family: "Poppins", sans-serif;
     margin: 25px;
     display: flex;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px var(--spacing) 0 rgba(0, 0, 0, 0.19);
 }
 
 .card h4 {
-    color: #3c4852;
-    font-size: 20px;
+    color: #3d0f00;
+    font-size: var(--spacing);
     margin: 15px 0;
 }
 
 .card img {
-    /* object-fit: cover; */
     border-radius: 10px;
-    margin-right: 20px;
+    margin-right: var(--spacing);
     overflow: hidden;
     width: 500px;
-    /* height: 50px; */
 }
 
 ul {
@@ -104,13 +104,13 @@ ul {
 
 ul li {
     display: inline-block;
-    margin: 0 20px;
+    margin: 0 var(--spacing);
     position: relative;
 }
 
 ul li a {
     text-decoration: none;
-    font-size: 20px;
+    font-size: var(--spacing);
     color: #fff;
     text-align: center;
     font-weight: 400;
